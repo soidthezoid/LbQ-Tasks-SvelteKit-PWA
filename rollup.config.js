@@ -16,11 +16,11 @@ export default (theme) => ({
     name: 'app',
     file: 'public/build/bundle.js',
   },
-  preprocess: [
+  /*preprocess: [
     scss({
-      /** options */
+      // options
     }),
-  ],
+  ],*/
   plugins: [
     svelte({
       preprocess: autoPreprocess(),
