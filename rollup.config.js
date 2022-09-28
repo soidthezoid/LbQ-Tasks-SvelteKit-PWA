@@ -16,14 +16,13 @@ export default (theme) => ({
     name: 'app',
     file: 'public/build/bundle.js',
   },
-  /*preprocess: [
-    scss({
-      // options
-    }),
-  ],*/
   plugins: [
     svelte({
-      preprocess: autoPreprocess(),
+      preprocess: [
+        scss({
+          /** options */
+        }),
+      ],
       // enable run-time checks when not in production
       dev: !production,
       // we'll extract any component CSS out into
