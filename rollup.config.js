@@ -18,12 +18,12 @@ export default (theme) => ({
   },
   plugins: [
     svelte({
-      preprocess: [
-        //autoPreprocess() /*,
+      /*preprocess: [
+        autoPreprocess(),
         scss({
           // options
         }),
-      ],
+      ],*/
       // enable run-time checks when not in production
       dev: !production,
       // we'll extract any component CSS out into
