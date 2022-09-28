@@ -19,6 +19,7 @@ export default (theme) => ({
   plugins: [
     svelte({
       preprocess: [
+        autoPreprocess(),
         scss({
           /** options */
         }),
