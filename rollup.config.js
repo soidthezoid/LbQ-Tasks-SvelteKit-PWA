@@ -19,10 +19,10 @@ export default (theme) => ({
   plugins: [
     svelte({
       preprocess: [
-        autoPreprocess()/*,
+        autoPreprocess() /*,
         scss({
-          /** options */
-        })*/
+          // options
+        })*/,
       ],
       // enable run-time checks when not in production
       dev: !production,
