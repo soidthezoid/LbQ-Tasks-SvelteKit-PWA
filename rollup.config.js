@@ -8,7 +8,7 @@ import { terser } from 'rollup-plugin-terser';
 
 const production = !process.env.ROLLUP_WATCH;
 
-export default (theme) => ({
+export default {
   input: 'src/main.js',
   output: {
     sourcemap: true,
@@ -59,7 +59,7 @@ export default (theme) => ({
   watch: {
     clearScreen: false,
   },
-});
+};
 
 function serve() {
   let started = false;
